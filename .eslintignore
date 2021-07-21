@@ -1,5 +1,5 @@
 build
-next-env.d.ts
+intl-displaynames.d.ts
 
 # Next.js build folder
 .next

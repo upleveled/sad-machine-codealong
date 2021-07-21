@@ -48,6 +48,17 @@ const formStyles = css`
   }
 `;
 
+const errorStyles = css`
+  max-width: 360px;
+  font-weight: bold;
+  color: #941437;
+
+  &:not(:empty) {
+    margin: -20px auto 10px;
+    padding: 10px;
+  }
+`;
+
 const resultsStyles = css`
   background-color: #fff;
   box-shadow: 0px 3px 17px 6px #e4e4e4;
@@ -75,7 +86,7 @@ export default function Home() {
       const json = (await response.json()) as WeatherApiResponse;
 
       if ('error' in json) {
-        setError({ message: json.error.message });
+        return setError({ message: json.error.message });
       } else {
         setError(undefined);
       }
@@ -101,7 +112,7 @@ export default function Home() {
         <button>Search</button>
       </form>
 
-      <div>{error?.message}</div>
+      <div css={errorStyles}>{error?.message}</div>
 
       <div css={resultsStyles}>
         {!(weatherData && 'temp' in weatherData)
