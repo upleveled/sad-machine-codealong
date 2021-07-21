@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@emotion/react": "^11.4.0",
+    "cypress": "^8.0.0",
     "focus-visible": "^5.2.0",
+    "jest": "^27.0.6",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -18,6 +20,7 @@
   "devDependencies": {
     "@emotion/babel-plugin": "^11.3.0",
     "@next/eslint-plugin-next": "^11.0.0",
+    "@types/jest": "^26.0.24",
     "@types/node": "^16.4.0",
     "@types/react": "^17.0.6",
     "@types/react-dom": "^17.0.5",
