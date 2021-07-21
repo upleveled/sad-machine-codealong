@@ -76,7 +76,7 @@ type AppError = {
 };
 
 export default function Home() {
-  const initialState = 'Vienna';
+  const initialState: number = 'Vienna';
   const [queryDraft, setQueryDraft] = useState(initialState);
   const [query, setQuery] = useState(initialState);
   const [error, setError] = useState<AppError>();
