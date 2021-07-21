@@ -1,0 +1,5 @@
+build
+next-env.d.ts
+
+# Next.js build folder
+.next
