@@ -120,9 +120,9 @@ export default async function weatherHandler(
   const response = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${req.query.q}&units=metric&appId=${process.env.OPENWEATHERMAP_API_KEY}`,
   );
-  const json = (await response.json()) as WeatherData;
+  const Json = (await response.json()) as WeatherData;
 
-  const result = transform(json);
+  const result = transform(Json);
 
   if (result.error) {
     return res
