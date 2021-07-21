@@ -74,8 +74,9 @@ type AppError = {
 };
 
 export default function Home() {
-  const [queryDraft, setQueryDraft] = useState('Vienna');
-  const [query, setQuery] = useState('Vienna');
+  const initialState = 'Vienna';
+  const [queryDraft, setQueryDraft] = useState(initialState);
+  const [query, setQuery] = useState(initialState);
   const [error, setError] = useState<AppError>();
 
   const [weatherData, setWeatherData] = useState<WeatherApiResponse>();
