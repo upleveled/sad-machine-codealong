@@ -1,6 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-
-const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+import { transform } from '../../util/openWeatherMap';
 
 /**
  * Weather data from the OpenWeatherMap API
@@ -23,12 +22,12 @@ const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
  *   ],
  *   "base": "stations",
  *   "main": {
- *     "temp": 298.01,
- *     "feels_like": 297.7,
- *     "temp_min": 295.54,
- *     "temp_max": 300.71,
- *     "pressure": 1021,
- *     "humidity": 44
+ *     "temp": 20.5,
+ *     "feels_like": 20.04,
+ *     "temp_min": 17.71,
+ *     "temp_max": 22.6,
+ *     "pressure": 1022,
+ *     "humidity": 55,
  *   },
  *   "visibility": 10000,
  *   "wind": {
@@ -54,20 +53,18 @@ const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
  * }
  * ```
  */
-type WeatherData =
+export type WeatherData =
   | {
       coord: {
         lon: number;
         lat: number;
       };
-      weather: [
-        {
-          id: number;
-          main: string;
-          description: string;
-          icon: string;
-        },
-      ];
+      weather: {
+        id: number;
+        main: string;
+        description: string;
+        icon: string;
+      }[];
       base: string;
       main: {
         temp: number;
@@ -125,16 +122,13 @@ export default async function weatherHandler(
   );
   const json = (await response.json()) as WeatherData;
 
-  if ('message' in json) {
-    return res.status(json.cod).json({ error: { message: json.message } });
+  const result = transform(json);
+
+  if (result.error) {
+    return res
+      .status(result.error.code)
+      .json({ error: { message: result.error.message } });
   }
 
-  res.status(200).json({
-    city: json.name,
-    country: regionNames.of(json.sys.country),
-    icon: json.weather[0].icon,
-    temp: json.main.temp,
-    conditions: json.weather[0].main,
-    conditionsDescription: json.weather[0].description,
-  });
+  res.status(200).json(result.data);
 }

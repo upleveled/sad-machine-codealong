@@ -106,13 +106,16 @@ export default function Home() {
         }}
       >
         <input
+          data-cy="search-field"
           onChange={(event) => setQueryDraft(event.currentTarget.value)}
           value={queryDraft}
         />
         <button>Search</button>
       </form>
 
-      <div css={errorStyles}>{error?.message}</div>
+      <div data-cy="error-message" css={errorStyles}>
+        {error?.message}
+      </div>
 
       <div css={resultsStyles}>
         {!(weatherData && 'temp' in weatherData)
