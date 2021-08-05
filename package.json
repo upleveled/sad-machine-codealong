@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@emotion/babel-plugin": "11.3.0",
-    "@next/eslint-plugin-next": "^11.0.0",
+    "@next/eslint-plugin-next": "11.0.1",
     "@types/jest": "26.0.24",
     "@types/node": "16.4.7",
     "@types/react": "17.0.15",
@@ -29,7 +29,7 @@
     "@upleveled/eslint-config-upleveled": "1.15.0",
     "babel-eslint": "^10.1.0",
     "eslint": "7.31.0",
-    "eslint-config-next": "^11.0.0",
+    "eslint-config-next": "11.0.1",
     "eslint-config-react-app": "6.0.0",
     "eslint-import-resolver-typescript": "2.4.0",
     "eslint-plugin-cypress": "2.11.3",
