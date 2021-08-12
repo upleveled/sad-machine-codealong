@@ -1,6 +1,6 @@
 import 'focus-visible';
 import { css, Global } from '@emotion/react';
-import { AppProps } from 'next/dist/next-server/lib/router/router';
+import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
