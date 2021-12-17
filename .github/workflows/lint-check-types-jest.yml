@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: '16'
       - run: yarn --frozen-lockfile
-      - run: yarn eslint .
+      - run: yarn eslint . --max-warnings 0
       - run: yarn tsc
       - run: yarn tsc -p cypress
       # Run the Jest unit tests
