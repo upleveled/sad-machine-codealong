@@ -94,7 +94,9 @@ export default function Home() {
 
       setWeatherData(json);
     }
-    retrieveWeatherData();
+    retrieveWeatherData().catch(() => {
+      setError({ message: 'Error fetching weather data' });
+    });
   }, [query]);
 
   return (
