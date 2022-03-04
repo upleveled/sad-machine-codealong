@@ -15,7 +15,7 @@ export function transform(weatherData: WeatherData) {
   return {
     data: {
       city: weatherData.name,
-      country: regionNames.of(weatherData.sys.country),
+      country: regionNames.of(weatherData.sys.country)!,
       icon: weatherData.weather[0].icon,
       temp: weatherData.main.temp,
       conditions: weatherData.weather[0].main,
