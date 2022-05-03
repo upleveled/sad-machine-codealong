@@ -1,6 +1,7 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>karlhorky/renovate-config"
+    "github>karlhorky/renovate-config:default.json5"
   ],
   "baseBranches": ["main", "solution"]
 }
