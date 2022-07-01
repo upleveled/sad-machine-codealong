@@ -18,7 +18,8 @@
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "incremental": true
   },
   "include": [
     ".eslintrc.cjs",
@@ -29,5 +30,5 @@
     "**/*.cjs",
     "**/*.mjs"
   ],
-  "exclude": ["node_modules", "build", "cypress"]
+  "exclude": ["node_modules", "build", "cypress", "cypress.config.ts"]
 }
