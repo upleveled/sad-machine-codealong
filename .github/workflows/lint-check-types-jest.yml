@@ -13,8 +13,6 @@ jobs:
           node-version: '18'
       - run: yarn --frozen-lockfile
       - run: yarn eslint . --max-warnings 0
-        env:
-          SKIP_SAFEQL: true
       - run: yarn tsc
       - run: yarn tsc -p cypress
       # Run the Jest unit tests
