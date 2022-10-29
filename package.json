@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.19.1",
-    "@emotion/babel-plugin": "11.10.5",
     "@next/eslint-plugin-next": "13.0.0",
     "@types/jest": "29.2.0",
     "@types/node": "18.11.7",
@@ -29,7 +28,6 @@
     "@typescript-eslint/parser": "5.41.0",
     "@upleveled/eslint-config-upleveled": "3.3.0",
     "@upleveled/eslint-plugin-upleveled": "2.1.6",
-    "babel-eslint": "10.1.0",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",
     "eslint-config-react-app": "7.0.1",
