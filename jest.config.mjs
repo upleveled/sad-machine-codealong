@@ -1,11 +1,14 @@
-import nextJest from 'next/jest';
+import nextJest from 'next/jest.js';
 
 // https://nextjs.org/docs/testing#setting-up-jest-with-the-rust-compiler
 const createJestConfig = nextJest({
   dir: './',
 });
 
-export default createJestConfig({
+/** @type {import('jest').Config} */
+const config = {
   testEnvironment: 'jest-environment-jsdom',
   testPathIgnorePatterns: ['<rootDir>/cypress/'],
-});
+};
+
+export default createJestConfig(config);
