@@ -1,3 +1,5 @@
+import { beforeEach, cy, describe, it } from 'local-cypress';
+
 describe('Search', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000');
