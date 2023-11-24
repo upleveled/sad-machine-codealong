@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
           *::after {
             box-sizing: border-box;
           }
-          // Remove outline for non-keyboard users
+          /* Remove outline for non-keyboard users */
           .js-focus-visible :focus:not(.focus-visible) {
             outline: none;
           }
