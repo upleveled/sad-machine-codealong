@@ -7,6 +7,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
       # Use Cypress GitHub action to run tests
       # https://github.com/cypress-io/github-action
       - name: Cypress run
