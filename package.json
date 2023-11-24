@@ -42,8 +42,5 @@
     "stylelint": "15.11.0",
     "stylelint-config-upleveled": "1.0.3",
     "typescript": "5.3.2"
-  },
-  "cacheDirectories": [
-    ".next/cache"
-  ]
+  }
 }
