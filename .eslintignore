@@ -1,7 +1,0 @@
-build
-intl-displaynames.d.ts
-
-# Next.js build folder
-.next
-
-cypress.config.ts

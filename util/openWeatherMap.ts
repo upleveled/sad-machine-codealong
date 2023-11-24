@@ -16,10 +16,10 @@ export function transform(weatherData: WeatherData) {
     data: {
       city: weatherData.name,
       country: regionNames.of(weatherData.sys.country)!,
-      icon: weatherData.weather[0].icon,
+      icon: weatherData.weather[0]!.icon,
       temp: weatherData.main.temp,
-      conditions: weatherData.weather[0].main,
-      conditionsDescription: weatherData.weather[0].description,
+      conditions: weatherData.weather[0]!.main,
+      conditionsDescription: weatherData.weather[0]!.description,
     },
   };
 }

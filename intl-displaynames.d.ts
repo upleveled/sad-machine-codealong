@@ -9,8 +9,8 @@ declare namespace Intl {
    * [Specification](https://tc39.es/ecma402/#sec-intl-displaynames-constructor)
    */
   interface DisplayNamesOptions {
-    localeMatcher: RelativeTimeFormatLocaleMatcher;
-    style: RelativeTimeFormatStyle;
+    localeMatcher: Intl.RelativeTimeFormatLocaleMatcher;
+    style: Intl.RelativeTimeFormatStyle;
     type: 'language' | 'region' | 'script' | 'currency';
     fallback: 'code' | 'none';
   }
@@ -59,6 +59,7 @@ declare namespace Intl {
    *
    * [Compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames#browser_compatibility).
    */
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   const DisplayNames: {
     prototype: DisplayNames;
 
@@ -85,7 +86,7 @@ declare namespace Intl {
      * [Specification](https://tc39.es/ecma402/#sec-intl-displaynames-constructor).
      */
     new (
-      locales?: BCP47LanguageTag | BCP47LanguageTag[],
+      locales?: Intl.BCP47LanguageTag | Intl.BCP47LanguageTag[],
       options?: Partial<DisplayNamesOptions>,
     ): DisplayNames;
 
@@ -107,8 +108,8 @@ declare namespace Intl {
      * [Specification](https://tc39.es/ecma402/#sec-Intl.DisplayNames.supportedLocalesOf).
      */
     supportedLocalesOf(
-      locales: BCP47LanguageTag | BCP47LanguageTag[],
-      options: { localeMatcher: RelativeTimeFormatLocaleMatcher },
-    ): BCP47LanguageTag[];
+      locales: Intl.BCP47LanguageTag | Intl.BCP47LanguageTag[],
+      options: { localeMatcher: Intl.RelativeTimeFormatLocaleMatcher },
+    ): Intl.BCP47LanguageTag[];
   };
 }
