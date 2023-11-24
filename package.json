@@ -20,6 +20,7 @@
     "@types/node": "20.9.5",
     "@types/react": "18.2.38",
     "@types/react-dom": "18.2.17",
+    "eslint": "8.54.0",
     "eslint-config-upleveled": "7.3.3",
     "stylelint": "^15.11.0",
     "stylelint-config-upleveled": "^1.0.3",
