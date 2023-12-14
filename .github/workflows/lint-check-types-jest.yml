@@ -12,9 +12,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-      - run: yarn
-      - run: cat yarn.lock
-      - run: exit 1
       - run: yarn --frozen-lockfile
       - run: yarn eslint . --max-warnings 0
       - run: yarn stylelint '**/*.{js,tsx,css,scss}' --max-warnings 0
