@@ -24,7 +24,7 @@
     "@types/node": "20.10.5",
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.18",
-    "cypress": "https://cdn.cypress.io/beta/npm/13.6.2/linux-x64/develop-372515829e82fc3542891cf92f83579e01f530e7/cypress.tgz",
+    "cypress": "13.6.2",
     "eslint": "8.56.0",
     "eslint-config-upleveled": "7.5.0",
     "jest": "29.7.0",
