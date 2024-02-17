@@ -118,7 +118,9 @@ export default async function weatherHandler(
   res: NextApiResponse<WeatherApiResponse>,
 ) {
   const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${req.query.q}&units=metric&appId=${process.env.OPENWEATHERMAP_API_KEY}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${
+      req.query.q as string
+    }&units=metric&appId=${process.env.OPENWEATHERMAP_API_KEY}`,
   );
   const Json = (await response.json()) as WeatherData;
 
