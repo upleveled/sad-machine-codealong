@@ -5662,10 +5662,10 @@ stylelint-config-recommended@14.0.0, stylelint-config-recommended@^14.0.0:
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-14.0.0.tgz#b395c7014838d2aaca1755eebd914d0bb5274994"
   integrity sha512-jSkx290CglS8StmrLp2TxAppIajzIBZKYm3IxT89Kg6fGlxbPiTiyH9PS5YUuVAFwaJLl1ikiXX0QWjI0jmgZQ==
 
-stylelint-config-upleveled@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/stylelint-config-upleveled/-/stylelint-config-upleveled-1.1.1.tgz#e4dab66bf4aaedecff0fdf562ec08ce133b85a68"
-  integrity sha512-YxCVwZdkucY38x0zQdF9mTAJEJxTqzY76bjDHddEyZ2KZnyr4G1uIC4US0A5TroK10EfOntLe2M8VcM6aMSvZQ==
+stylelint-config-upleveled@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/stylelint-config-upleveled/-/stylelint-config-upleveled-1.1.2.tgz#5363f5baac26f10136db3407968c229ca4b861cc"
+  integrity sha512-M1sgLBj/f1mBGs8E0T8rabCLl+hOpcMwxG/w0OlVXGN4UnqcLglqe8pEm72IPcXwDeBcJdCUh0YMeYWjH1NDsQ==
   dependencies:
     postcss-styled-syntax "0.6.4"
     stylelint-config-css-modules "4.4.0"
