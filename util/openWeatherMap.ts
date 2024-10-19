@@ -1,4 +1,4 @@
-import { WeatherData } from '../pages/api/weather';
+import type { WeatherData } from '../pages/api/weather';
 
 const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
 
