@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { useEffect, useState } from 'react';
-import { WeatherApiResponse } from './api/weather';
+import type { WeatherApiResponse } from './api/weather';
 
 const containerStyles = css`
   background-color: #eee;
