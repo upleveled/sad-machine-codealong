@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>karlhorky/renovate-config:default.json5"
-  ],
+  "extends": ["github>karlhorky/renovate-config:default.json5"],
   "baseBranches": ["main", "solution"],
   "packageRules": [
     {
@@ -15,7 +13,7 @@
         "overrides",
         "packageManager"
       ],
-      "updateTypes": ["patch", "minor"],
+      "matchUpdateTypes": ["patch", "minor"],
       "automerge": true
     },
     {
@@ -28,7 +26,7 @@
         "overrides",
         "packageManager"
       ],
-      "updateTypes": ["major"],
+      "matchUpdateTypes": ["major"],
       "automerge": true
     }
   ]
