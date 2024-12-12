@@ -10,16 +10,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/react": "11.13.5",
+    "@emotion/react": "11.14.0",
     "focus-visible": "5.2.1",
-    "next": "15.0.4",
+    "next": "15.1.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
   "devDependencies": {
-    "@types/node": "22.10.1",
-    "@types/react": "19.0.0",
-    "@types/react-dom": "19.0.0",
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2",
     "eslint": "9.16.0",
     "eslint-config-upleveled": "8.12.1",
     "stylelint": "16.11.0",
