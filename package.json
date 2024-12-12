@@ -10,9 +10,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/react": "11.13.5",
+    "@emotion/react": "11.14.0",
     "focus-visible": "5.2.1",
-    "next": "15.0.3",
+    "next": "15.1.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
@@ -21,9 +21,9 @@
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.1.0",
     "@types/jest": "29.5.14",
-    "@types/node": "22.10.1",
-    "@types/react": "19.0.0",
-    "@types/react-dom": "19.0.0",
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2",
     "cypress": "13.16.1",
     "eslint": "9.16.0",
     "eslint-config-upleveled": "8.12.1",
