@@ -830,10 +830,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
-"@types/node@22.15.2":
-  version "22.15.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.15.2.tgz#1db55aa64618ee93a58c8912f74beefe44aca905"
-  integrity sha512-uKXqKN9beGoMdBfcaTY1ecwz6ctxuJAcUlwE55938g0ZJ8lRxwAZqRz2AJ4pzpt5dHdTPMB863UZ0ESiFUcP7A==
+"@types/node@22.15.3":
+  version "22.15.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.15.3.tgz#b7fb9396a8ec5b5dfb1345d8ac2502060e9af68b"
+  integrity sha512-lX7HFZeHf4QG/J7tBZqrCAXwz9J5RD56Y6MpP0eJkka8p+K0RY/yBTW7CYFJ4VGCclxqOLKmiGP5juQc6MKgcw==
   dependencies:
     undici-types "~6.21.0"
 
@@ -847,10 +847,10 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.2.tgz#5950e50960793055845e956c427fc2b0d70c5239"
   integrity sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==
 
-"@types/react-dom@19.1.2":
-  version "19.1.2"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.1.2.tgz#bd1fe3b8c28a3a2e942f85314dcfb71f531a242f"
-  integrity sha512-XGJkWF41Qq305SKWEILa1O8vzhb3aOo3ogBlSmiqNko/WmRb6QIaweuZCXjKygVDXpzXb5wyxKTSOsmkuqj+Qw==
+"@types/react-dom@19.1.3":
+  version "19.1.3"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.1.3.tgz#3f0c60804441bf34d19f8dd0d44405c0c0e21bfa"
+  integrity sha512-rJXC08OG0h3W6wDMFxQrZF00Kq6qQvw0djHRdzl3U5DnIERz0MRce3WVc7IS6JYBwtaP/DwYtRRjVlvivNveKg==
 
 "@types/react@19.1.2":
   version "19.1.2"
@@ -4385,10 +4385,10 @@ stylelint-scss@^6.0.0, stylelint-scss@^6.4.0:
     postcss-selector-parser "^6.1.2"
     postcss-value-parser "^4.2.0"
 
-stylelint@16.19.0:
-  version "16.19.0"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.19.0.tgz#bc10b4515dcceacd4aa68ccc0997724a477ee497"
-  integrity sha512-BJzc5mo/ez0H/ZSl3UbxGdkK/s0kFGsF5/k6IGu4z8wJ1qp49WrOS9RxswvcN6HMirt0g/iiJqOwLHTbWv49IQ==
+stylelint@16.19.1:
+  version "16.19.1"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.19.1.tgz#486b95fa7518a3077ee2802bc6dda2174bc097bb"
+  integrity sha512-C1SlPZNMKl+d/C867ZdCRthrS+6KuZ3AoGW113RZCOL0M8xOGpgx7G70wq7lFvqvm4dcfdGFVLB/mNaLFChRKw==
   dependencies:
     "@csstools/css-parser-algorithms" "^3.0.4"
     "@csstools/css-tokenizer" "^3.0.3"
