@@ -5209,10 +5209,10 @@ listr2@^3.8.3:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
-local-cypress@1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/local-cypress/-/local-cypress-1.2.6.tgz#13d49beb5112f9c06d710388b721be1512a54c60"
-  integrity sha512-F3d7eyZNkqOwEamtziRgzleCiKd05z3leIyVR/G9w6IMwnYn4wRtw68C/THx6C+PUFDsBgwNUVNuReRSKRj70A==
+local-cypress@1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/local-cypress/-/local-cypress-1.2.7.tgz#4fa9f2e981e42e3b8694f957bcca7546c5c65d14"
+  integrity sha512-DbPPhTz4MO5Gc+9KbLQuVsZwyv81/eMVkAzt4LOlsvaKACMHxFn85EtHfs5nQ7hDiSXXUBOtuuTzJYCogJxVeg==
   dependencies:
     debug "4.3.4"
 
