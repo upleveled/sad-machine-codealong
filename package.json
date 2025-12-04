@@ -18,11 +18,11 @@
   },
   "devDependencies": {
     "@types/node": "24.10.1",
-    "@types/react": "19.2.6",
+    "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.1",
     "eslint-config-upleveled": "9.4.2",
-    "stylelint": "16.25.0",
+    "stylelint": "16.26.0",
     "stylelint-config-upleveled": "2.0.3",
     "typescript": "5.9.3"
   },
