@@ -21,13 +21,13 @@ jobs:
         env:
           OPENWEATHERMAP_API_KEY: ${{ secrets.OPENWEATHERMAP_API_KEY }}
       # Store any Cypress screenshots on test failure
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
       # Store any Cypress videos on test failure
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         if: failure()
         with:
           name: cypress-videos
